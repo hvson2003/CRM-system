@@ -15,8 +15,8 @@ Hệ thống quản lý khách hàng và sản phẩm đơn giản (CRM) sử d�
 ### Cài đặt:
 1. Clone repo về máy:
    ```bash
-   git clone https://github.com/hvson2003/web_crm-project
-   cd crm-project
+   git clone https://github.com/hvson2003/CRM-system
+   cd CRM-system
    ```
 
 2. Cài đặt các thư viện:
@@ -25,12 +25,12 @@ Hệ thống quản lý khách hàng và sản phẩm đơn giản (CRM) sử d�
    ```
 
 3. Cấu hình môi trường:
+   Vào MongoDB Compass và tạo database có tên là crm
    Tạo file `.env` trong thư mục gốc và cấu hình:
    ```
    PORT=3000
    MONGO_URI=mongodb://localhost:27017/crm
-   ADMIN_EMAIL=admin@gmail.com
-   ADMIN_PASSWORD=1234
+   JWT_SECRET=yourSecretKey
    ```
 
 4. Chạy ứng dụng:
@@ -57,6 +57,9 @@ Hệ thống quản lý khách hàng và sản phẩm đơn giản (CRM) sử d�
 - **PUT /api/products/:id** - Cập nhật thông tin sản phẩm
 - **DELETE /api/products/:id** - Xóa sản phẩm
 
+
+Để dễ dàng kiểm tra các endpoint của API, tôi đã tạo một file Postman chứa các yêu cầu API cho dự án này.
+
 ---
 
 ## 3. Cách truy cập AdminBro
@@ -69,5 +72,3 @@ http://localhost:3000/admin
 ### Thông tin đăng nhập:
 - **Email**: `admin@gmail.com`
 - **Mật khẩu**: `123456`
-
-# web_CRM-system
